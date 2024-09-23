@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a id="robik">
+    REFERAL SYSTEM
+</a>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        let url = window.location.pathname;
+        let tg = window.Telegram.WebApp;
+        let idi = 1;
+        $.post("/ref", { ref_id : idi, url_last : url }, function(response) {
+                location.href = "/";
+                });
+    </script>
+</body>
+</html>
