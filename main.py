@@ -5,7 +5,6 @@ from fastapi.responses import FileResponse
 import asyncio
 from models import gift_for_riddle, auth_check_password,register_password, auth_password,rat_win, auth,get_friends, game_ch,get_profile, rat_auth, referation_system, register, register_name, one_win, get_nickname
 import aiofiles
-from download import download_avatar
 from urllib.parse import unquote
 from auth import check_pass
 from aiogram.methods.create_invoice_link import CreateInvoiceLink
